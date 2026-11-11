@@ -7,6 +7,10 @@ let genres = document.getElementById("genres")
 let description = document.getElementById("description")
 
 export function addtolist() {
+    if(name.value.trim() == "" || genres.value.trim() == "" || description.value.trim() == ""){
+        window.alert("Please fill out all spaces.")
+        return
+    }
     let temp = {
         "image":{"original":"assets/video-player-placeholder-very-large.png"},
         "name":name.value,
