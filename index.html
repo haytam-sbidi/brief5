@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SérieScope</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script type="module" src="js/script.js"></script>
+</head>
+
+<body class="bg-[#191919] text-white">
+    <header class="flex p-5">
+        <div class="bg-white p-2 rounded-lg">
+            <img src="assets/clapperboard-svgrepo-com.svg" class="w-9">
+        </div>
+        <span class="text-3xl self-center pl-4 font-bold">Sériescope</span>
+    </header>
+    <main class="p-5">
+        <section class=" mb-[20px]">
+            <h2 class="font-bold  text-4xl">Explore les séries TV</h2>
+            <h5 class="text-[14px] text-[#BABABA]">Retrouve tes séries préférées et enrichis le catalogue.</h5>
+        </section>
+        <section class=" border-[#393939] border-2 rounded-2xl p-3 mb-[20px]">
+            <h2 class="text-3xl font-bold">Ajouter une série</h2>
+            <h5 class="text-[14px] text-[#BABABA]">Les champs marqués d’un * sont obligatoires.</h5>
+            <form>
+                <label class="font-bold text-[15px]">Nom de la série *</label><br><br>
+                <input type="text" class="border-1 border-[#393939] rounded-lg w-[100%] p-1"><br><br>
+                <label class="font-bold text-[15px]">Genre(s) *</label>
+                <span class="text-[14px] text-[#BABABA]">séparés par des virgules</span><br><br>
+                <input type="text" class="border-1 border-[#393939] rounded-lg w-[100%] p-1"><br><br>
+                <label for="">Description</label>
+                <span class="text-[14px] text-[#BABABA]">facultative</span><br><br>
+                <input type="text" class="border-1 border-[#393939] rounded-lg h-20 w-[100%] p-1"><br><br>
+                <button type="submit" class="border-1 rounded-xl w-[100%] h-[44px] text-black bg-white">＋ Ajouter la
+                    série</button>
+            </form>
+        </section>
+        <section class=" border-[#393939] border-2 rounded-2xl p-3 mb-[20px]">
+            <h2 class="text-3xl font-bold">Catalogue des séries</h2>
+            <h5 class="text-[14px] text-[#BABABA]">Recherche par nom ou explore un genre.</h5>
+            <form>
+                <label class="font-bold text-[15px]">Recherche</label><br><br>
+                <input type="text" class="border-1 border-[#393939] rounded-lg w-[100%] p-1"><br><br>
+                <label class="font-bold text-[15px]">Genre</label><br><br>
+                <div>
+                    <select name="" id="" class="border-1 border-[#393939] rounded-lg h-[44px] w-[50%] p-1"></select>
+                    <button class="border-1 border-[#393939] rounded-xl w-[45%] h-[44px]">↻ Réinitialiser</button>
+                </div>
+            </form>
+        </section>
+        <section>
+            <h5 class="text-[14px] text-[#BABABA]">6 séries affichées</h5>
+            <div id="destination" class="xl:grid grid-cols-3 gap-x-2">
+                <div class="border-[0.5px] border-[#393939] rounded-xl mt-2">
+                    <img src="assets/video-player-placeholder-very-large.png" alt=""
+                        class="rounded-t-xl w-[100%] h-[202px]">
+                    <div class="pl-4 p-2">
+                        <h2 class="font-bold text-[15px]">Movie title</h2>
+                        <div class="flex">
+                            <h5 class="w-fit h-[18px] bg-[#292929] rounded-lg text-[11px] self-center pl-2 pr-2">genres
+                            </h5>
+                        </div>
+                        <p class="text-[14px] text-[#BABABA]">Description</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+</body>
+
+</html>
