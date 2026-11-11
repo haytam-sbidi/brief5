@@ -1,9 +1,11 @@
-import { data } from "./fetch.js"
+import { movielist } from "./add.js"
 
-const movies = data
+const movies = movielist
 let destination = document.getElementById("destination")
 
 export function display() {
+    destination.textContent = ""
+
     for (let i = 0; i <= 20; i++) {
         let div1 = document.createElement("div")
         let img = document.createElement("img")
@@ -39,4 +41,5 @@ export function display() {
         div1.append(img, div2)
         destination.append(div1)
     }
+    console.log(movies)
 }
