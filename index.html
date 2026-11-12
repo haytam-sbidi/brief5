@@ -42,11 +42,13 @@
             <h5 class="text-[14px] text-[#BABABA]">Recherche par nom ou explore un genre.</h5>
             <form>
                 <label class="font-bold text-[15px]">Recherche</label><br><br>
-                <input type="text" class="border-1 border-[#393939] rounded-lg w-[100%] p-1"><br><br>
+                <input type="text" id="search-bar" class="border-1 border-[#393939] rounded-lg w-[100%] p-1"><br><br>
                 <label class="font-bold text-[15px]">Genre</label><br><br>
                 <div>
-                    <select name="" id="" class="border-1 border-[#393939] rounded-lg h-[44px] w-[50%] p-1"></select>
-                    <button class="border-1 border-[#393939] rounded-xl w-[45%] h-[44px]">↻ Réinitialiser</button>
+                    <select name="" id="genres-select" class="border-1 border-[#393939] rounded-lg h-[44px] w-[50%] p-1">
+                        <option value="" class="bg-black text-white">select a genre</option>
+                    </select>
+                    <button id="reset-btn" class="border-1 border-[#393939] rounded-xl w-[45%] h-[44px]">↻ Réinitialiser</button>
                 </div>
             </form>
         </section>
@@ -65,6 +67,7 @@
                         <p class="text-[14px] text-[#BABABA]">Description</p>
                     </div>
                 </div>
+                <p class="justify-self-center text-[30px]">aucun film trouvé</p>
             </div>
 
         </section>
