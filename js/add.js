@@ -1,6 +1,10 @@
 import { data } from "./fetch.js"
 
-export const movielist = data
+if(!localStorage.getItem("movies")){
+    localStorage.setItem("movies",JSON.stringify(data))
+}
+
+export const movielist = JSON.parse(localStorage.getItem("movies"))
 
 let name = document.getElementById("name")
 let genres = document.getElementById("genres")
@@ -23,4 +27,5 @@ export function addtolist() {
     name.value = ""
     genres.value = ""
     description.value = ""
+    localStorage.setItem("movies",JSON.stringify(movielist))
 }

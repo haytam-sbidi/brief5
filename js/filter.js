@@ -15,7 +15,6 @@ export function precisedisplay(){
     if(selectstatus != ""){
         filtered = result.filter(item => item.genres.includes(selectstatus))
     }
-    console.log(filtered)
     if(filtered.length == 0){
         empty()
     }else{
@@ -35,7 +34,9 @@ export function genreadd(){
     for (let i = 0; i < movies.length; i++) {
         let x = movies[i].genres
         list = [...new Set([...list,...x])]
+        list = list.sort()
     }
+    genresselect.textContent = ""
     for (let i = 0; i < list.length; i++) {
         let option = document.createElement("option")
         option.textContent = list[i]

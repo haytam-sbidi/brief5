@@ -6,7 +6,7 @@ let destination = document.getElementById("destination")
 export function display(arr) {
     destination.textContent = ""
 
-    for (let i = 0; i <= 20; i++) {
+    for (let i = 0; i < 20; i++) {
         let div1 = document.createElement("div")
         let img = document.createElement("img")
         let div2 = document.createElement("div")
@@ -41,5 +41,4 @@ export function display(arr) {
         div1.append(img, div2)
         destination.append(div1)
     }
-    console.log(arr)
 }

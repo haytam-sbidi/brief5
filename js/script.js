@@ -18,6 +18,7 @@ submitbtn.addEventListener("click",(e)=>{
     e.preventDefault()
     addtolist()
     display(movies)
+    genreadd()
 })
 search.addEventListener("input",()=>{
     precisedisplay()
