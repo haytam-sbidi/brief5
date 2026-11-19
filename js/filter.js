@@ -32,7 +32,7 @@ function empty(){
 export function genreadd(){
     let list =[]
     for (let i = 0; i < movies.length; i++) {
-        let x = movies[i].genres.map(word => word.toLowerCase())
+        let x = movies[i].genres.map(word => word)
         list = [...new Set([...list,...x])]
         list = list.sort()
     }
