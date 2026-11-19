@@ -14,7 +14,7 @@ export function display(arr) {
         let clean = desc.replace(regex,"")
 
         div1.className = ("border-[0.5px] border-[#393939] rounded-xl mt-2")
-        img.setAttribute("src", `${arr[i].image.original}`)
+        img.setAttribute("src", `${arr[i].image?.original}` || "assets/video-player-placeholder-very-large.png" )
         img.className = "rounded-t-xl w-[100%] h-[202px]"
         div2.className = "pl-4 p-2"
         h2.className = "font-bold text-[15px]"
