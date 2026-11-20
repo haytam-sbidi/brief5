@@ -1,3 +1,5 @@
+let destination = document.getElementById("destination")
+
 export function display(arr) {
     destination.textContent = ""
 
