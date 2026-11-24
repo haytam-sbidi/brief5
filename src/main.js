@@ -38,4 +38,5 @@ genresselect.addEventListener("change",filterdisplay)
 resetbtn.addEventListener("click",(e)=>{
     e.preventDefault()
     reset()
+    showseries()
 })
